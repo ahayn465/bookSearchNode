@@ -7,8 +7,10 @@ body {
 a {
   color: dimgrey;
 }
-
-button, #addButton, #btnSearch{
+.container{
+	margin-top: 50px;
+}
+button, #addButton{
 	background-color: dimgrey;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -108,7 +110,7 @@ button, #addButton, #btnSearch{
 		color:yellow;
 }
 
-form, #search {
+//form, #search {
 	background: -webkit-linear-gradient(dimgrey, black);
 	background: -moz-linear-gradient(dimgrey, black);
 	float:right;
