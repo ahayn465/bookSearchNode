@@ -138,10 +138,9 @@ button, #addButton{
 #formAddBook{
 	display: none;
 	float: left;
-
 }
 
-#search {
-	float:right;
-	
+#inputSearch {
+	margin-top: 15px;
 }
+
