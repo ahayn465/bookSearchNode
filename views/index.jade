@@ -1,0 +1,90 @@
+extends layout
+
+block content
+
+	//Wrapper
+	#wrapper
+
+	//Book Info
+
+	#bookInfo
+		h2 Book Info
+		p
+			strong Is Fiction:
+			| <span id='bookIsFiction'></span>
+			br
+			strong Author Name:
+			| <span id='bookAuthorFirst'></span> <span id='bookAuthorLast'></span>
+			br
+			strong Pseudonym:
+			| <span id='bookAuthorPseudo'></span>
+			br
+			strong ISBN:
+			| <span id='bookIsbn'></span>
+			br
+			strong Publish Date:
+			| <span id='bookPubDate'></span>
+			br
+			strong Publisher:
+			| <span id='bookPublisher'></span>
+			br
+			strong Language:
+			| <span id='bookLanguage'></span>
+			br
+			strong Editor:
+			| <span id='bookEditor'></span>
+			br
+			
+			button#btnHideInfo(type="submit") close
+	// /Book info
+
+ 
+	//Book List
+	#bookList
+		table
+			thead
+				th(id="title").Title
+				th(id="dash").Dashboard
+			tbody
+	// /Book List
+
+
+	#addbook
+		
+		form#formAddBook(name="addBook")
+			div#formAddBook
+			legend Book
+			input#inputTitle(type="text", placeholder="title", name="title")
+			br
+			label(for="isfiction", class="new") Is Ficiton: 
+			input#inputIsFiction(type="checkbox", name="isfiction", value="true", text="Fiction",checked=(true===false ? "checked" : undefined) )
+			br
+			br
+			legend Author
+			input#inputAthorFirst(type="text", name="afname", placeholder="first name")
+			br
+			input#inputAthorLast(type="text", name="alname", placeholder="last name")
+			br
+			input#inputAuthorPseudo(type="text", name="apseudo", placeholder="pseudonym")
+			br
+			br
+			legend Edition
+			input#inputIsbn(type="text", name="isbn", placeholder="isbn")
+			br
+			input#inputPubDate(type="date", name="pubdate", placeholder="2012-09-09")
+			br
+			input#inputPublisher(type="text", name="publisher", placeholder="publisher")
+			br
+			input#inputLanguage(type="text", name="blanguage", placeholder="language")
+			br
+			input#inputEditor(type="text", name="editor", placeholder="editor name")
+			br
+			button#btnSubmit(type="submit") add
+
+
+	// Search Results
+
+	// /END search results
+
+
+	// / WRAPPER

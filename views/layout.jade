@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+		script(src='/javascripts/global.js')
+	body
+
+
+	//ADD BOOK
+
+	input#addButton(type="button", value="Add Book")
+
+	// End add book
+
+	//Search
+
+	#search
+		legend Search for books
+		input#inputSearch(type="text", name="search", placeholder="search")
+		input#btnSearch(type="submit")
+
+	// /End search
+
+
+	block content
+
+	

@@ -1,0 +1,145 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  color: dimgrey;
+}
+
+button, #addButton, #btnSearch{
+	background-color: dimgrey;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 10px;
+    padding: 10px 15px;
+    float: left;
+    border-radius:6px;
+    color: yellow;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+#addButton{
+	font-size: 14px;
+}
+
+#btnHideInfo{
+	font-size: 14px;
+	position: relative; top:20px;
+}
+
+#bookList {
+	margin:0 0 30px 0;
+}
+
+	#bookList table {
+		margin:auto;
+		width:auto;
+		height:auto;
+		border-collapse:separate;
+		border-spacing:1px;
+		background: -webkit-linear-gradient(dimgrey, black);
+		background: -moz-linear-gradient(dimgrey, black);
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		padding:10px;
+		border: 1px solid black;
+		border: inset 1px solid black;
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	}
+		#bookList table th {
+			background:#black;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;		
+		}
+
+		#bookList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+			background: -webkit-linear-gradient(dimgrey, black);
+			background: -moz-linear-gradient(dimgrey, black);
+		}
+		#bookList table td {
+			background: whitesmoke; 
+			padding:5px 10px;
+			text-align:center;
+			
+		}
+
+
+#bookInfo {
+	display: none;
+	margin:auto;
+	background: -webkit-linear-gradient(dimgrey, black);
+	background: -moz-linear-gradient(dimgrey, black);
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	width:250px;
+	height: 300px;
+	position:relative;
+	top:0; left:0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid black;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+	#bookInfo p {
+		padding:15px;
+		border:1px solid #CCC;
+		background: whitesmoke;
+}
+	#bookInfo h2{
+		color:yellow;
+}
+
+form, #search {
+	background: -webkit-linear-gradient(dimgrey, black);
+	background: -moz-linear-gradient(dimgrey, black);
+	float:right;
+	position:relative;
+	width:200px;
+	height:auto;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	font-weight: bold;
+	color: yellow;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #999;
+	border: inset 1px solid black;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#formAddBook{
+	display: none;
+	float: left;
+
+}
+
+#search {
+	float:right;
+	
+}
